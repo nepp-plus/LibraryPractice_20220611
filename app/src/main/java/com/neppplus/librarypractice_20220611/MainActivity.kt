@@ -1,5 +1,6 @@
 package com.neppplus.librarypractice_20220611
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -20,7 +21,8 @@ class MainActivity : AppCompatActivity() {
 
 //            별도의 사진을 크게 보는 액티비티로 이동.
 
-
+            val myIntent = Intent(this, ViewPhotoActivity::class.java)
+            startActivity(myIntent)
 
 
         }
