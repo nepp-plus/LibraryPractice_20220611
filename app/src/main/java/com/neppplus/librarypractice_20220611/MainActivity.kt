@@ -31,7 +31,9 @@ class MainActivity : AppCompatActivity() {
 
         btnCall.setOnClickListener {
 
-//            01055556666 에 CALL 액션 수행. => 권한문제로 앱이 죽는다.
+//            CALL_PHONE 권한 확인 => 승인 되었을때만 CALL 액션 수행.
+//            승인이 안되었다면, 토스트로 "권한 문제로 전화 연결 불가" 라고 띄워주자.
+
 
             val myUri = Uri.parse("tel:01055556666")
 
