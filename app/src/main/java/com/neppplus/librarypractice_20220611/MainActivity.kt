@@ -6,6 +6,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.bumptech.glide.Glide
 import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.normal.TedPermission
 import kotlinx.android.synthetic.main.activity_main.*
@@ -79,6 +80,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setValues() {
+
+//        인터넷에 있는 이미지를 그대로 이미지뷰에 표시.
+//        https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202110/04/b9651a63-1ba7-4ee3-bbe8-3c83fbc1f71f.jpg
+//        위 주소의 이미지를 imgWeb에서 표시. (drawable 사용 X)
+
+        Glide.with(this).load("https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202110/04/b9651a63-1ba7-4ee3-bbe8-3c83fbc1f71f.jpg").into(imgWeb)
 
     }
 
