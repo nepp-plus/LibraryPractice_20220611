@@ -16,6 +16,7 @@
 
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
             android:src="@drawable/jisung_park"
             android:scaleType="centerCrop"
             android:layout_width="80dp"
