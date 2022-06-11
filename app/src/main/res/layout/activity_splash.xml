@@ -11,6 +11,8 @@
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="120dp"
         app:lottie_rawRes="@raw/pride_animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
         android:layout_height="120dp" />
 
 </LinearLayout>
