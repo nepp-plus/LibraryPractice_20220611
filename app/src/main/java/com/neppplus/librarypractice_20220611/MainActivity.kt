@@ -1,6 +1,7 @@
 package com.neppplus.librarypractice_20220611
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -26,6 +27,20 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+
+
+        btnCall.setOnClickListener {
+
+//            01055556666 에 CALL 액션 수행. => 권한문제로 앱이 죽는다.
+
+            val myUri = Uri.parse("tel:01055556666")
+
+            val myIntent = Intent( Intent.ACTION_CALL, myUri )
+
+            startActivity(myIntent)
+
+        }
+
 
     }
 
